@@ -1,0 +1,569 @@
+        * {
+            margin: 0%;
+        }
+        
+        .container {
+            background-image: url('/images/images.jpeg');
+            background-blend-mode: darken;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 80%;
+        }
+        
+        .title {
+            position: absolute;
+            color: white;
+            font-weight: 900;
+        }
+        
+        .sub-title {
+            position: relative;
+            left: 2rem;
+            top: 2rem;
+            color: white;
+            font-weight: 700;
+        }
+        
+        .titles-anime {
+            animation: titles 2s;
+        }
+        
+        @keyframes titles {
+            from {
+                left: 100rem;
+            }
+        }
+        
+        .boring-text {
+            position: relative;
+            text-align: left;
+            margin: 2%;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        
+        .text-container {
+            width: 34rem;
+            height: 15rem;
+            position: absolute;
+            margin: 1%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            top: 3rem;
+        }
+        
+        .img-container {
+            position: absolute;
+            width: 19rem;
+            height: 19rem;
+            top: 42rem;
+            left: 60rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .sample {
+            position: relative;
+            width: 16rem;
+            height: 16rem;
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 1rem 1rem 1rem;
+        }
+        
+        .user {
+            position: absolute;
+            left: 85%;
+            display: flex;
+            flex-direction: row;
+            top: 2rem;
+            justify-content: space-between;
+        }
+        
+        .user button {
+            position: relative;
+            padding: 0rem 0rem 3rem 3rem;
+            color: white;
+            transition: color 1s;
+            background: none;
+            outline: none;
+            border: none;
+        }
+        
+        .user button:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+        
+        .sample-images {
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            background-color: rgba(255, 68, 0, 0.9);
+        }
+        
+        .image-container {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            top: 60rem;
+            left: 5rem;
+            width: fit-content;
+            height: fit-content;
+        }
+        
+        .images-container {
+            position: inherit;
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+        
+        .girl {
+            width: 19rem;
+            height: 20rem;
+            position: relative;
+            bottom: 10rem;
+            left: 65.3rem;
+            top: 0.01rem;
+        }
+        
+        .everything {
+            position: absolute;
+            left: 2rem;
+            padding: 2rem 0rem 0rem;
+        }
+        
+        .overall-cont {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 20rem;
+            background-color: rgba(255, 68, 0, 0.9);
+            top: 34rem;
+        }
+        
+        .overall-anime {
+            animation: overall 2s 1s;
+        }
+        
+        @keyframes overall {
+            from {
+                opacity: 0%;
+            }
+        }
+        
+        .schedule {
+            position: absolute;
+            margin: 1%;
+            font-family: sans-serif;
+            left: 1rem;
+            color: white;
+        }
+        
+        .start {
+            position: absolute;
+            margin: 1%;
+            font-family: cursive;
+            top: 3rem;
+            left: 1rem;
+            color: white;
+        }
+        
+        .question {
+            position: absolute;
+            left: 4rem;
+            width: 10rem;
+            height: 3rem;
+            border-radius: 20px;
+            top: 85rem;
+            color: orangered;
+        }
+        
+        .question:hover {
+            opacity: 50%;
+        }
+        
+        .list {
+            list-style: none;
+            position: absolute;
+            top: 9rem;
+            left: 20%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.5s;
+            padding: 0rem 0rem 3rem 3rem;
+        }
+        
+        a:hover {
+            color: orangered;
+        }
+        
+        .nav {
+            padding: 5rem 5rem;
+            left: 3rem;
+        }
+        
+        .home {
+            display: inline-block;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+        
+        #back-to-top {
+            left: 97%;
+            position: fixed;
+            top: 15%;
+        }
+        
+        #signup-form {
+            position: absolute;
+            top: 3rem;
+            width: 50%;
+            height: 90%;
+            left: 25%;
+            background-color: white;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 10%;
+            animation: signup-anime 2s linear;
+        }
+        
+        #signup-form input {
+            width: 30rem;
+            height: 3rem;
+            margin: 2rem 2rem;
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid orangered;
+        }
+        /* figure out how to make the input cursor to be close to the baseline */
+        
+        .sign-up-btn button {
+            position: relative;
+            width: 10rem;
+            height: 3rem;
+            top: 3rem;
+            right: 1rem;
+            background-color: orangered;
+            outline: none;
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: white;
+        }
+        
+        .sign-up-btn button:hover {
+            opacity: 70%;
+        }
+        
+        #signup-form input::placeholder {
+            position: relative;
+            top: 1rem;
+        }
+        
+        #signup-form h1 {
+            color: orangered;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #signup-form a {
+            position: relative;
+            z-index: 2;
+            left: 30%;
+            color: orangered;
+            top: 1rem;
+            font-style: italic;
+        }
+        /* login */
+        
+        #login-form {
+            position: absolute;
+            top: 3rem;
+            width: 50%;
+            height: 90%;
+            left: 25%;
+            background-color: white;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 10%;
+            animation: signup-anime 2s linear;
+        }
+        
+        #login-form input {
+            width: 30rem;
+            height: 3rem;
+            margin: 2rem 2rem;
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid orangered;
+        }
+        /* figure out how to make the input cursor to be close to the baseline */
+        
+        .login-btn button {
+            position: relative;
+            width: 10rem;
+            height: 3rem;
+            top: 3rem;
+            right: 1rem;
+            background-color: orangered;
+            outline: none;
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: white;
+        }
+        
+        .login-btn button:hover {
+            opacity: 70%;
+        }
+        
+        #login-form input::placeholder {
+            position: relative;
+            top: 1rem;
+        }
+        
+        #login-form h1 {
+            color: orangered;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #login-form a {
+            position: relative;
+            z-index: 2;
+            left: 30%;
+            color: orangered;
+            top: 1rem;
+            font-style: italic;
+        }
+        
+        .select-account {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            display: none;
+            flex-direction: column;
+            width: 20rem;
+            height: 20rem;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10%;
+        }
+        
+        .select-account h2 {
+            margin-bottom: 4rem;
+            color: orangered;
+        }
+        
+        .select-account .agent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            border-width: 2rem;
+            width: 10rem;
+            background: none;
+            border-bottom: 1px solid orangered;
+            height: 5rem;
+            bottom: 2rem;
+        }
+        
+        .select-account .agent>i {
+            color: orangered;
+        }
+        
+        .select-account .agent>h3 {
+            color: orangered;
+            position: relative;
+            top: 1rem;
+        }
+        
+        .select-account .agent>h3:hover {
+            cursor: pointer;
+            opacity: 60%;
+        }
+        
+        .select-account .customer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            border-width: 2rem;
+            width: 10rem;
+            background: none;
+            border-bottom: 1px solid orangered;
+            height: 5rem;
+            bottom: 2rem;
+            top: 1rem;
+        }
+        
+        .select-account .customer>i {
+            color: orangered;
+        }
+        
+        .select-account .customer>h3 {
+            color: orangered;
+            position: relative;
+            top: 1rem;
+        }
+        
+        .select-account .customer>h3:hover {
+            cursor: pointer;
+            opacity: 60%;
+        }
+        
+        @media screen and (max-width:500px) {
+            .text-animation {
+                animation: text 2s linear;
+            }
+            .list {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                left: 0.1rem;
+                top: 9rem;
+            }
+            .list a {
+                padding: .3rem .3rem .3rem .3rem;
+            }
+            .title {
+                position: absolute;
+                font-size: larger;
+                left: 0.01rem;
+            }
+            .sub-title {
+                position: absolute;
+                top: 3rem;
+                left: .1rem;
+            }
+            .titles-anime {
+                animation: titles 2s;
+            }
+            @keyframes titles {
+                from {
+                    left: 100rem;
+                }
+            }
+            .everything {
+                width: 100%;
+                left: 0.5rem;
+            }
+            .image-container {
+                width: 100%;
+            }
+            .container {
+                width: 100%;
+            }
+            .overall-cont {
+                width: 100%;
+                top: 26rem;
+            }
+            .overall-anime {
+                animation: overall 2s;
+            }
+            @keyframes overall {
+                from {
+                    position: absolute;
+                    opacity: 0%;
+                }
+            }
+            .girl {
+                left: 0.01rem;
+                top: 20rem;
+                width: 100%;
+            }
+            .sample-images {
+                display: none;
+            }
+            .question {
+                top: 69rem;
+                left: 1%;
+            }
+            #back-to-top {
+                position: absolute;
+                left: 1%;
+                top: 2%;
+                color: black;
+            }
+            .user {
+                left: 24rem;
+                top: 17px;
+            }
+            .user button {
+                padding: 0rem 1rem 0rem 0rem;
+            }
+            .select-account {
+                left: 20%;
+                top: 20%;
+            }
+            #signup-form {
+                width: 80%;
+                height: 80%;
+                left: 15%;
+            }
+            #signup-form h1 {
+                position: relative;
+                top: 0.1rem;
+            }
+            #signup-form input {
+                width: 20rem;
+                margin: 1rem 1rem;
+            }
+            .sign-up-btn {
+                position: absolute;
+                top: 18rem;
+                left: 6rem;
+            }
+            .sign-up-btn button {
+                width: 8rem;
+            }
+            #signup-form a {
+                font-size: small;
+                left: 5rem;
+            }
+            #login-form {
+                width: 80%;
+                height: 80%;
+                left: 15%;
+            }
+            #login-form h1 {
+                position: relative;
+                top: 0.1rem;
+            }
+            #login-form input {
+                width: 20rem;
+                margin: 1rem 1rem;
+            }
+            .login-btn {
+                position: absolute;
+                top: 18rem;
+                left: 6rem;
+            }
+            .login-btn button {
+                width: 8rem;
+            }
+            #login-form a {
+                font-size: small;
+                left: 5rem;
+                top: 3.5rem;
+            }
+        }

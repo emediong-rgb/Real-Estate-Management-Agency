@@ -1,0 +1,119 @@
+  /* set #back-to-beginning to show only
+  when the user has scrolled down to a certain height 
+  of the screen */
+  
+  #back-to-beginning {
+      left: 96%;
+      position: fixed;
+      top: 5%;
+      color: orangered;
+  }
+  
+  a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .list {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      left: 1%;
+      padding: 2rem 0rem 1rem 1rem;
+  }
+  
+  a {
+      color: orangered;
+      border-bottom: transparent;
+      transition: border-bottom 1s;
+  }
+  
+  a:hover {
+      border-bottom: 2px solid orangered;
+  }
+  
+  #search-bar {
+      position: relative;
+      width: 40rem;
+      height: 2rem;
+      top: 3rem;
+      border-radius: 1%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid orangered;
+      background: none;
+  }
+  
+  #search-icon {
+      position: absolute;
+      left: 61rem;
+      top: 9.5rem;
+  }
+  
+  .categories {
+      position: absolute;
+      left: 0.1rem;
+      background-color: orangered;
+      width: 4rem;
+      top: 0%;
+      height: 100%;
+      text-align: center;
+  }
+  
+  .categories h4 {
+      position: relative;
+      top: 25%;
+      color: white;
+  }
+  
+  .categories h4:hover {
+      opacity: 70%;
+      cursor: pointer;
+  }
+  
+  #upload-btn {
+      position: absolute;
+      left: 89%;
+      top: 2.2rem;
+      background: none;
+      border: none;
+      outline: none;
+      color: orangered;
+  }
+  
+  .categories-anime {
+      animation: anime 1s;
+  }
+  
+  @keyframes anime {
+      from {
+          opacity: 0%;
+      }
+  }
+  
+  @media screen and (max-width:500px) {
+      .dropdown {
+          display: contents;
+          position: absolute;
+          width: fit-content;
+          height: fit-content;
+      }
+      #menu-bar {
+          position: absolute;
+          left: 86%;
+          background: none;
+          border: none;
+          outline: none;
+      }
+      #search-bar {
+          width: 80%;
+          display: flex;
+          right: 2rem;
+      }
+      .list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  }

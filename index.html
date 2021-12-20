@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+
+<body>
+    <center>
+        <div class="overall-container" id='overall-container'>
+            <div class="container">
+                <div class="everything" id='everything'>
+                    <h1 class='title'>VEAM PROPERTIES</h1>
+                    <p class='sub-title'>making you access all properties at your fingertip</p>
+                </div>
+                <div class="user">
+                    <button class="login" onclick='displayLogin()'>Login</button>
+                    <button class="signup" onclick="displaySignup()">Signup</button>
+                </div>
+
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="home"><a href="/html/houses.html" id='a-tag'>Houses</a></li>
+                        <li class="home"><a href="/html/lands.html" id='a-tag'>Lands</a></li>
+                        <li class="home"><a href="/html/timesline.html" id='a-tag'>Timeline</a></li>
+                        <li class="home"><a href="/html/cars.html" id='a-tag'>Cars</a></li>
+                        <li class="home"><a href="/html/about.html" id='a-tag'>About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overall-cont">
+                <div class="headers">
+                    <h1 class="schedule">SCHEDULE YOUR TIME</h1>
+                    <h2 class="start">Get Started now!!</h2>
+                </div>
+                <div class="section1">
+                    <div class="text-container">
+                        <h3 class="boring-text"><b>Veam Property</b> platform is a search engine for properties serving as a home where all properties in your town are uploaded to our services include lands, buildings,filling station cars and other<br>structural property.</p>
+                        </h3>
+                    </div>
+                </div>
+                <img src="/images/Image_1639396921675.jpg" alt="" class='girl'>
+
+            </div>
+
+
+            <div class="image-container">
+                <div class="sample-images">
+                    <img src="/images/Image_1639422886358.jpg" alt="" class='sample'>
+                </div>
+                <div class="sample-images">
+                    <img src="/images/Image_1639422910583.jpg" alt="" class='sample'>
+                </div>
+                <div class="sample-images">
+                    <img src="/images/Image_1639422927074.jpg" alt="" class='sample'>
+                </div>
+                <div class="sample-images">
+                    <img src="/images/Image_1639422947405.jpg" alt="" class='sample'>
+                </div>
+            </div>
+            <h4 class='question'>Why Choose Us?</h4>
+
+        </div>
+
+        <div class="signup-form" id='signup-form'>
+            <center>
+                <h1>Signup</h1>
+                <div class="name">
+                    <input type="text" placeholder='Name'>
+                </div>
+                <div class="email">
+                    <input type="text" placeholder='Email'>
+                </div>
+                <div class="password">
+                    <input type="text" placeholder='Password'>
+                </div>
+                <div class="sign-up-btn">
+                    <button type="text" placeholder='Signup'>Signup</button>
+                </div>
+                <a href="#login-form" id='login-tag' onclick='displayLogin()'>Already a user?login here</a>
+            </center>
+
+        </div>
+
+        <div class="login-form" id='login-form'>
+            <center>
+                <h1>Login</h1>
+                <div class="email">
+                    <input type="text" placeholder='Email'>
+                </div>
+                <div class="password">
+                    <input type="text" placeholder='Password'>
+                </div>
+                <div class="login-btn">
+                    <button type="text">Login</button>
+                </div>
+                <a href="#signup-form" id='signup-tag' onclick='displaySignup()'>Not registered?signup here</a>
+            </center>
+
+        </div>
+
+        <div class="select-account" id='select-account'>
+            <center>
+                <h2>Select Account</h2>
+                <div class="agent">
+                    <i class='fas fa-user fa-3x'></i>
+                    <h3 class='text'>Agent</h3>
+                </div>
+
+                <div class="customer">
+                    <i class="fas fa-user fa-3x"></i>
+                    <h3 class='text'>Customer</h3>
+                </div>
+            </center>
+
+        </div>
+
+
+    </center>
+    <script src='/js/index.js'></script>
+
+</body>
+
+</html>
